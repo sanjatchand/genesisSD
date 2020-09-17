@@ -6,7 +6,7 @@ BUILD = build
 
 # All source code files
 SRC = main.cpp\
-sdp.cpp
+sdp.cpp\
 
 
 # All include folders with header files
