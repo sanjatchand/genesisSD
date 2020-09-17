@@ -1,25 +1,16 @@
-// O(n*k) solution for finding maximum sum of 
-// a subarray of size k 
-#include <bits/stdc++.h> 
-using namespace std; 
+#include <stdio.h> 
   
-// Returns maximum sum in a subarray of size k. 
-int maxSum(int arr[], int n, int k) 
+void printKMax(int arr[], int n, int k) 
 { 
-    // Initialize result 
-    int max_sum = INT_MIN; 
+    int j, max; 
   
-    // Consider all blocks starting with i. 
-    for (int i = 0; i < n - k + 1; i++) { 
-        int current_sum = 0; 
-        for (int j = 0; j < k; j++) 
-            current_sum = current_sum + arr[i + j]; 
+    for (int i = 0; i <= n - k; i++) { 
+        max = arr[i]; 
   
-        // Update result if required. 
-        max_sum = max(current_sum, max_sum); 
+        for (j = 1; j < k; j++) { 
+            if (arr[i + j] > max) 
+                max = arr[i + j]; 
+        } 
+        printf("%d ", max); 
     } 
-  
-    return max_sum; 
 } 
-  
-// Driver code 
