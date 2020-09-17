@@ -5,8 +5,8 @@ PROJECT_NAME = Sliding Window
 BUILD = build
 
 # All source code files
-SRC = project_main.c\
-main.cpp
+SRC = main.cpp\
+sdp.cpp
 
 
 # All include folders with header files
