@@ -1,10 +1,9 @@
-#include <bits/stdc++.h> 
-using namespace std; 
+#include<stdio.h>
 int main() 
 { 
-    int arr[] = { 1, 4, 2, 10, 2, 3, 1, 0, 20 }; 
-    int k = 4; 
+    int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }; 
     int n = sizeof(arr) / sizeof(arr[0]); 
-    cout << maxSum(arr, n, k); 
+    int k = 3; 
+    printKMax(arr, n, k); 
     return 0; 
-} 
+}
