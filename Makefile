@@ -5,8 +5,8 @@ PROJECT_NAME = Sliding Window
 BUILD = build
 
 # All source code files
-SRC = main.cpp\
-sdp.cpp\
+SRC = main.c\
+sdp.c\
 
 # All test source files
 
